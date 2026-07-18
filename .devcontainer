@@ -1,11 +1,18 @@
 {
 	"name": "Default Linux Universal",
-	"image": "mcr.microsoft.com/devcontainers/universal:latest",
+	"image": "mcr.microsoft.com/devcontainers/universal:2-linux",
 	"customizations": {
 		"vscode": {
 			"extensions": [
 				"ms-vscode.live-server"
-			]
+			],
+			"settings": {
+        		"github.copilot.enable": {
+          			"*": false
+        		},
+        		"chat.disableAIFeatures": true,
+        		"github.copilot.editor.enableAutoCompletions": false
+     		 }
 		}
 	}
 }
